@@ -10,7 +10,7 @@ import {
 
 export default function SocialFollow() {
     return (
-        <div class="flex gap-4 pt-3">
+        <div class="flex gap-4 text-gray-400 pt-3">
             <a href="https://www.youtube.com/c/jamesqquick"
                 className="youtube social">
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
