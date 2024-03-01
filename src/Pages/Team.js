@@ -199,7 +199,7 @@ const Team = () => {
                     <p className='pb-10 text-3xl font-semibold'>
                         Tim KRSBI Bertuah (2024)
                     </p>
-                    <div className='grid grid-cols-3 gap-6 font-semibold text-black'>
+                    <div className='grid grid-cols-1 gap-6 font-semibold text-black md:grid-cols-3'>
                         <div className='w-48 h-64 p-3 border-2 border-blue-600 rounded-lg'>Bambang Trimukti</div>
                         <div className='w-48 h-64 p-3 border-2 border-blue-600 rounded-lg'>Farhan</div>
                         <div className='w-48 h-64 p-3 border-2 border-blue-600 rounded-lg'>abdul aziz</div>
