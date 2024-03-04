@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="container">
 
-<div className='items-center justify-center shadow-inner shadow-black bg-cover bg-black h-[50vh]' style={{ backgroundImage: `url(${erc})` }}>
+            <div className='items-center justify-center shadow-inner shadow-black bg-cover bg-black h-[50vh]' style={{ backgroundImage: `url(${erc})` }}>
                 <div class="w-full h-full flex justify-center items-center backdrop-brightness-50">
                     <p className='text-4xl font-semibold tracking-wider text-center '> <span className='text-blue-500'>About</span> <span className='text-red-500'>Our</span> <span className='text-yellow-500'>
                         Club</span></p>

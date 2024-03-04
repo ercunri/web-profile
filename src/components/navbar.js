@@ -20,7 +20,7 @@ const Navbar = () => {
                         <NavLink to="/team" className='hover:text-blue-500'>Team</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/home" className='hover:text-blue-500'>Gallery</NavLink>
+                        <NavLink to="/gallery" className='hover:text-blue-500'>Gallery</NavLink>
                     </li>
                     
                 </ul>
