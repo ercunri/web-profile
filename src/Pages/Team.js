@@ -34,24 +34,24 @@ const Team = () => {
 
 
 
-            <div className='flex items-center justify-center gap-4 p-10 text-lg text-center '>
+            <div className='container grid items-center justify-center grid-cols-2 gap-4 p-10 text-lg text-center md:grid-cols-6 md:px-24 '>
 
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button id="divOne"
                             onClick={(e) => {
                                 hideShowDiv(e)
                             }}
-                            className={isActive.id === 'divOne' ? `px-3 py-1 text-white bg-blue-600 rounded-md   ` : 'hover:text-blue-500 text-black'}
+                            className={isActive.id === 'divOne' ? `w-full h-full text-white bg-blue-600 rounded-md   ` : 'hover:text-blue-500 text-black'}
                         >
                             Core Team
                         </button>
                     </div>
 
                 </div>
-                
+
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button
                             id="divTwo"
                             onClick={(e) => {
@@ -65,7 +65,7 @@ const Team = () => {
 
                 </div>
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button id="divThree"
                             onClick={(e) => {
                                 hideShowDiv(e)
@@ -78,7 +78,7 @@ const Team = () => {
 
                 </div>
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button id="divFour"
                             onClick={(e) => {
                                 hideShowDiv(e)
@@ -91,7 +91,7 @@ const Team = () => {
 
                 </div>
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button id="divFive"
                             onClick={(e) => {
                                 hideShowDiv(e)
@@ -104,7 +104,7 @@ const Team = () => {
 
                 </div>
                 <div className="col-4">
-                    <div className="mb-4">
+                    <div className="">
                         <button
                             id="divSix"
                             onClick={(e) => {
@@ -123,67 +123,6 @@ const Team = () => {
 
             <div className={isActive.id === 'divOne' ? `divOne` : 'divOne hidden'}>
 
-
-
-                <div className="flex flex-col-reverse items-start justify-center gap-3 p-10 md:flex-row ">
-
-                    <div class="">
-                        <img src={logo} className="w-64 h-64" alt="logo" />
-
-                    </div>
-                    <div className="flex flex-col items-center gap-3 text-center md:w-2/3 md:items-start md:text-left">
-                        <p className='text-sm font-bold tracking-wider text-blue-500 uppercase'>Divisi ERC</p>
-                        <p className="text-5xl font-semibold text-blue-500">
-                            Divisi <span className='text-yellow-300'>Research </span>
-                            <span className='text-red-500'>Competition</span>
-                        </p>
-                        <ol className='flex flex-col w-3/4 gap-3 p-3 text-lg tracking-wider text-gray-500 list-decimal font-base'>
-                            <li>
-                                Bekerjasama dengan divisi kreatif
-                                untuk mencari Informasi
-                                Perlombaan
-                            </li>
-                            <li>Menentukan komponen yang akandi
-                                beli untuk keperluan riset dan lomba
-                            </li>
-                            <li>Membuat ide inovasi riset baru
-                                minimal 1 kali dalam 1 bulan
-                            </li>
-                        </ol>
-
-                    </div>
-                </div>
-
-                |<div className="flex flex-col-reverse items-start justify-center gap-3 p-10 md:flex-row ">
-
-                    <div class="">
-                        <img src={logo} className="w-64 h-64" alt="logo" />
-
-                    </div>
-                    <div className="flex flex-col items-center gap-3 text-center md:w-2/3 md:items-start md:text-left">
-                        <p className='text-sm font-bold tracking-wider text-blue-500 uppercase'>Divisi ERC</p>
-                        <p className="text-5xl font-semibold text-blue-500">
-                            Divisi <span className='text-yellow-300'>Human </span>
-                            <span className='text-red-500'>Resource</span>
-                        </p>
-                        <ol className='flex flex-col w-3/4 gap-3 p-3 text-lg tracking-wider text-gray-500 list-decimal font-base'>
-                            <li>
-                                Rekrutmen dan seleksi anggota
-                                baru
-                            </li>
-                            <li>Pelatihan dan pengembangan
-                                anggota
-                            </li>
-                            <li>Manajemen kinerja anggota
-                            </li>
-                            <li>Kompensasi dan manfaat anggota
-                            </li>
-                            <li>Pengelolaan hubungan kerja
-                            </li>
-                        </ol>
-
-                    </div>
-                </div>
 
 
 
@@ -256,8 +195,72 @@ const Team = () => {
                 </div>
             </div>
 
+            <div className={isActive.id === 'divFour' ? `divFour` : 'divFour hidden'}>
+                <div className="flex flex-col-reverse items-start justify-center gap-3 p-10 md:flex-row ">
+
+                    <div class="">
+                        <img src={logo} className="w-64 h-64" alt="logo" />
+
+                    </div>
+                    <div className="flex flex-col items-center gap-3 text-center md:w-2/3 md:items-start md:text-left">
+                        <p className='text-sm font-bold tracking-wider text-blue-500 uppercase'>Divisi ERC</p>
+                        <p className="text-5xl font-semibold text-blue-500">
+                            Divisi <span className='text-yellow-300'>Research </span>
+                            <span className='text-red-500'>Competition</span>
+                        </p>
+                        <ol className='flex flex-col w-3/4 gap-3 p-3 text-lg tracking-wider text-gray-500 list-decimal font-base'>
+                            <li>
+                                Bekerjasama dengan divisi kreatif
+                                untuk mencari Informasi
+                                Perlombaan
+                            </li>
+                            <li>Menentukan komponen yang akandi
+                                beli untuk keperluan riset dan lomba
+                            </li>
+                            <li>Membuat ide inovasi riset baru
+                                minimal 1 kali dalam 1 bulan
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+            <div className={isActive.id === 'divFive' ? `divFive` : 'divFive hidden'}>
+                |<div className="flex flex-col-reverse items-start justify-center gap-3 p-10 md:flex-row ">
+
+                    <div class="">
+                        <img src={logo} className="w-64 h-64" alt="logo" />
+
+                    </div>
+                    <div className="flex flex-col items-center gap-3 text-center md:w-2/3 md:items-start md:text-left">
+                        <p className='text-sm font-bold tracking-wider text-blue-500 uppercase'>Divisi ERC</p>
+                        <p className="text-5xl font-semibold text-blue-500">
+                            Divisi <span className='text-yellow-300'>Human </span>
+                            <span className='text-red-500'>Resource</span>
+                        </p>
+                        <ol className='flex flex-col w-3/4 gap-3 p-3 text-lg tracking-wider text-gray-500 list-decimal font-base'>
+                            <li>
+                                Rekrutmen dan seleksi anggota
+                                baru
+                            </li>
+                            <li>Pelatihan dan pengembangan
+                                anggota
+                            </li>
+                            <li>Manajemen kinerja anggota
+                            </li>
+                            <li>Kompensasi dan manfaat anggota
+                            </li>
+                            <li>Pengelolaan hubungan kerja
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+
+            </div>
+
             <div className={isActive.id === 'divSix' ? `divSix` : 'divSix hidden'}>
-                <div className="flex flex-col items-center gap-3 pt-3 pb-10">
+                <div className="flex flex-col items-center gap-3 pb-10">
                     <p className="text-2xl font-semibold text-blue-500">
                         Tim <span className='text-yellow-300'>KRSBI </span>
                         <span className='text-red-500'>2024</span>
