@@ -5,6 +5,7 @@ import bertuah from '../images/bertuah1.jpg'
 import bambang from '../images/3.png'
 import dela from '../images/2.png'
 import labib from '../images/1.png'
+import fikri from '../images/4.png'
 
 import React, { useState, useEffect } from 'react'
 
@@ -286,7 +287,7 @@ const Team = () => {
                                 <p className='self-end text-xs font-light'> Programmer</p>
                             </div>
                         </div>
-                        <div className='relative w-48 h-48 p-3 bg-white bg-right-top bg-cover border-8 border-white rounded-full shadow-md' style={{ backgroundImage: `url(${dela})` }}>
+                        <div className='relative w-48 h-48 p-3 bg-white bg-right-top bg-cover border-8 border-white rounded-full shadow-md' style={{ backgroundImage: `url(${fikri})` }}>
                             <div className='absolute px-4 py-2 text-white bg-blue-600 rounded-md shadow-md -bottom-4'>
                                 <p className='self-end text-sm'>Fikri Rivandi</p>
                                 <p className='self-end text-xs font-light'> Programmer</p>
